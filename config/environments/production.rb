@@ -80,4 +80,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #set to actual host name- NOT localhost:3000
+  config.action_mailer.default_url_options = { host: http://alichtpinteresting.herokuapp.com/ }
 end
